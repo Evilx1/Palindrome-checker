@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
+        <script src="https://kit.fontawesome.com/a049478cc6.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palindrome</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: black;
+            color: rgb(255, 255, 255);
+            font-family: "Ubuntu", sans-serif;
+            font-weight: 400
+        }
+
+        #Input {
+            /* display: block; */
+            padding: 5px;
+            height: 20px;
+            border-radius: 4px;
+            font-family: "Ubuntu", sans-serif;
+        }
+
+        #Btn {
+            /* display: block; */
+            height: 55px;
+            width: 40%;
+            cursor: pointer;
+            margin-top: 20px;
+            font-family: "Ubuntu", sans-serif;
+            transition: all ease 0.5s;
+            border: 2px solid;
+        }
+        #Btn:hover{
+            background-color: black;
+           color: white;
+        }
+
+        .main-container {
+            height: 100vh;
+            max-width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .container {
+            height: 40vh;
+            max-width: 500px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            border: 2px solid white;
+            border-radius: 5px;
+            padding: 20px;
+        }
+
+        .container h1 {
+            margin-bottom: 20px;
+        }
+
+        .result {
+            font-size: 18px;
+            padding: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            margin-top: 10px;
+            height: 8vh;
+            width: 80%;
+            border: 2px solid white;
+        }
+
+        #mode {
+            font-family: "Ubuntu", sans-serif;
+            height: 55px;
+            width: 250px;
+            cursor: pointer;
+            margin-top: 20px;
+            transition: all ease 0.5s;
+            border: 2px solid ;
+        }
+        #mode:hover {
+           background-color: black;
+           color: white;
+        }
+    </style>
+</head>
+
+<body>
+    
+    <div class="main-container">
+        <div class="container">
+            <h1>Palindrome Checker</h1>
+            <input type="text" placeholder="Enter a text" id="Input">
+            <button id="Btn">Submit</button>
+            <div class="result">
+                <p id="r1">?</p>
+            </div>
+        </div>
+        <button id="mode"><i class="fa-solid fa-moon"></i>MODE</button>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
